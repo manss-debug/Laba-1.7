@@ -1,3 +1,4 @@
+
 package org.example.javalab3.model;
 
 import javafx.beans.property.DoubleProperty;
@@ -16,8 +17,8 @@ public class Author {
             String fullName,
             String phone,
             String email,
-            double rating
-    ) {
+            double rating) {
+
         this.fullName = new SimpleStringProperty(fullName);
         this.phone = new SimpleStringProperty(phone);
         this.email = new SimpleStringProperty(email);

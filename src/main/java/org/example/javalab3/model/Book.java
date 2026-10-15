@@ -1,3 +1,4 @@
+
 package org.example.javalab3.model;
 
 import javafx.beans.property.IntegerProperty;
@@ -20,8 +21,8 @@ public class Book {
             String publisher,
             int publicationYear,
             String genre,
-            Author author
-    ) {
+            Author author) {
+
         this.title = new SimpleStringProperty(title);
         this.binding = new SimpleStringProperty(binding);
         this.publisher = new SimpleStringProperty(publisher);
@@ -31,8 +32,7 @@ public class Book {
     }
 
     public Book() {
-        this("", "", "", 2026, "",
-                new Author("", "", "", 0.0));
+        this("", "", "", 2026, "", new Author("", "", "", 0.0));
     }
 
     public String getTitle() {
